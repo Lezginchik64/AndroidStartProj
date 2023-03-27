@@ -34,7 +34,7 @@ public class Calculator extends AppCompatActivity {
         RadioButton mul = (RadioButton) findViewById(R.id.multiple);
         RadioButton div = (RadioButton) findViewById(R.id.divide);
 
-        TextView answer = (TextView) findViewById(R.id.result);
+        TextView result = (TextView) findViewById(R.id.result);
 
         float numone = Integer.parseInt(numOne.getText().toString());
         float numtwo = Integer.parseInt(numTwo.getText().toString());
@@ -57,7 +57,7 @@ public class Calculator extends AppCompatActivity {
             }
             solution = numone / numtwo;
         }
-       answer.setText("The answer is "+ solution);
+       result.setText("The answer is "+ solution);
 
     }
 
